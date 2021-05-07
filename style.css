@@ -1,0 +1,40 @@
+body {
+    padding: 20px;
+}
+
+.buttons {
+    width: 100%;
+}
+
+.buttons tr {
+    width: 100%;
+    text-align: center;
+}
+
+.buttons td {
+    border: 1px solid #aaa;
+    height: 50px;
+    cursor: default;
+    border-radius: 4px;
+}
+
+.buttons td:hover {
+    background-color: #ddd;
+}
+
+#result-box {
+    height: 110px;
+    border: 1px solid #aaaa;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#inputs {
+    margin: 0;
+}
+
+#result {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.3rem;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <link href="./style.css" rel="stylesheet" />
+  <title>Hello World!</title>
+</head>
+
+<body>
+  <!-- <h1>Hello World!</h1>
+    We are using Node.js <span id="node-version"></span>,
+    Chromium <span id="chrome-version"></span>,
+    and Electron <span id="electron-version"></span>. -->
+
+  <!-- 计算器 -->
+
+  <div id="result-box">
+    <p id="inputs"></p>
+    <p id="result"></p>
+  </div>
+  <table class="buttons">
+    <tr>
+      <td>MC</td>
+      <td>MR</td>
+      <td>MS</td>
+      <td>M+</td>
+      <td>M-</td>
+    </tr>
+    <tr>
+      <td>←</td>
+      <td>CE</td>
+      <td>C</td>
+      <td>±</td>
+      <td>√</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>／</td>
+      <td>％</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>×</td>
+      <td>1/x</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>-</td>
+      <td rowspan="2">=</td>
+    </tr>
+    <tr>
+      <td colspan="2">0</td>
+      <td>.</td>
+      <td>+</td>
+    </tr>
+  </table>
+
+  <!-- You can also require other files to run in this process -->
+  <script src="./jquery-3.6.0.min.js"></script>
+  <script src="./renderer.js"></script>
+</body>
+
+</html>
